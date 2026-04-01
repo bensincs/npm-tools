@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { getDate } from "hello-world-util";
+import { getDate } from "@bensincs/hello-world-util";
 
 const command = process.argv[2];
 

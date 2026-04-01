@@ -12,6 +12,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bensincs/hello-world-cli@workspace:packages/hello-world-cli":
+  version: 0.0.0-use.local
+  resolution: "@bensincs/hello-world-cli@workspace:packages/hello-world-cli"
+  dependencies:
+    "@bensincs/hello-world-util": "workspace:*"
+    "@types/node": "npm:^25.5.0"
+    tsx: "npm:^4.19.2"
+    typescript: "npm:*"
+  bin:
+    hello-world: ./dist/cli.js
+  languageName: unknown
+  linkType: soft
+
+"@bensincs/hello-world-util@workspace:*, @bensincs/hello-world-util@workspace:packages/hello-world-util":
+  version: 0.0.0-use.local
+  resolution: "@bensincs/hello-world-util@workspace:packages/hello-world-util"
+  dependencies:
+    "@types/node": "npm:^25.5.0"
+    typescript: "npm:*"
+  languageName: unknown
+  linkType: soft
+
 "@changesets/apply-release-plan@npm:^7.1.0":
   version: 7.1.0
   resolution: "@changesets/apply-release-plan@npm:7.1.0"
@@ -994,28 +1016,6 @@ __metadata:
   checksum: 10c0/386d011a553e02bc594ac2ca0bd6d9e4c22d7fa8cfbfc448a6d148c59ea881b092db9dbe3547ae4b88e55f1b01f7c4a2ecc53b310c042793e63aa44cf6c257f2
   languageName: node
   linkType: hard
-
-"hello-world-cli@workspace:packages/hello-world-cli":
-  version: 0.0.0-use.local
-  resolution: "hello-world-cli@workspace:packages/hello-world-cli"
-  dependencies:
-    "@types/node": "npm:^25.5.0"
-    hello-world-util: "workspace:*"
-    tsx: "npm:^4.19.2"
-    typescript: "npm:*"
-  bin:
-    hello-world: ./dist/cli.js
-  languageName: unknown
-  linkType: soft
-
-"hello-world-util@workspace:*, hello-world-util@workspace:packages/hello-world-util":
-  version: 0.0.0-use.local
-  resolution: "hello-world-util@workspace:packages/hello-world-util"
-  dependencies:
-    "@types/node": "npm:^25.5.0"
-    typescript: "npm:*"
-  languageName: unknown
-  linkType: soft
 
 "http-cache-semantics@npm:^4.1.1":
   version: 4.2.0

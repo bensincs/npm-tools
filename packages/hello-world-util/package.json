@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-util",
+  "name": "@bensincs/hello-world-util",
   "version": "0.1.0",
   "description": "Utility helpers including a placeholder getDate function",
   "type": "module",

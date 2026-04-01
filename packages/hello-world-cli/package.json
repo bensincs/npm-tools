@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-cli",
+  "name": "@bensincs/hello-world-cli",
   "version": "0.1.0",
   "description": "A sample CLI that says hello world",
   "type": "module",
@@ -12,11 +12,11 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "dev": "yarn workspace hello-world-util build && tsx src/cli.ts",
+    "dev": "yarn workspace @bensincs/hello-world-util build && tsx src/cli.ts",
     "start": "node dist/cli.js"
   },
   "dependencies": {
-    "hello-world-util": "workspace:*"
+    "@bensincs/hello-world-util": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
