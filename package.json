@@ -1,0 +1,21 @@
+{
+  "name": "npm-tools",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.13.0",
+  "scripts": {
+    "build": "yarn workspaces foreach --all -pt run build",
+    "test": "yarn workspaces foreach --all -pt run test",
+    "lint": "yarn workspaces foreach --all -pt run lint",
+    "typecheck": "yarn workspaces foreach --all -pt run typecheck",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "yarn build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "typescript": "^5.4.5"
+  }
+}
